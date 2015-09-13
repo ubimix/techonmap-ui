@@ -34,4 +34,4 @@ Client dependencies install :
 
 ## License
 
-The code of TechOnMap UI is licensed under the MIT license (see LICENSE file).
+The code of TechOnMap UI is licensed under the MIT license (see [LICENSE](LICENSE)  file).
