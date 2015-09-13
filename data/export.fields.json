@@ -1,0 +1,21 @@
+[
+    {"label": "Identifiant", "field": "properties.id" },
+    {"label": "Nom", "field": "properties.name" },
+    {"label": "Description", "field": "properties.description" },
+    {"label": "Tag 1", "field": "properties.tags.0" },
+    {"label": "Tag 2", "field": "properties.tags.1" },
+    {"label": "Tag 3", "field": "properties.tags.2" },
+    {"label": "Latitude", "field": "geometry.coordinates.1" },
+    {"label": "Longitude", "field": "geometry.coordinates.0" },
+    {"label": "N° et nom de rue", "field": "properties.address" },
+    {"label": "CP", "field": "properties.postcode" },
+    {"label": "Ville", "field": "properties.city" },
+    {"label": "Année de création", "field": "properties.creationyear" },
+    {"label": "Url site web", "field": "properties.url" },
+    {"label": "Nom compte Twitter", "field": "properties.twitter" },
+    {"label": "Url page Facebook", "field": "properties.facebook" },
+    {"label": "Url page Google +", "field": "properties.googleplus" },
+    {"label": "Url page Linkedin", "field": "properties.linkedin" },
+    {"label": "Url page Viadeo", "field": "properties.viadeo" },
+    {"label": "Catégorie", "field": "properties.category" }
+]

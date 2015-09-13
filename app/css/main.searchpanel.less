@@ -1,0 +1,229 @@
+// Container for top menu panels
+.searchpanel {
+    overflow-y: auto;
+    
+    // Individual panels in the dropdown
+    .panel-group {
+       margin: 0.5em 0px;
+       > .panel {
+            margin: 0;
+            .box-shadow(none);
+            > .panel-heading {
+                padding: 0px;
+                margin: 0;
+                .panel-title {
+                    paddin: 0px;
+                    padding-top: 1em;
+                    padding-bottom: 0.5em;
+                    color: @red-main;
+                }
+            }
+            > .panel-body {
+                padding: 0px;
+            }
+            
+            .zone {
+                i.icon {
+                    .icon(24px);
+                    margin-right: 0.4em;
+                    vertical-align: middle;
+                }
+            }
+            
+        }
+        // Individual items in lists
+        .list-group {
+            margin: 0.5em 0;
+            border-bottom: 1px solid #eee;
+            .list-group-item {
+                padding: 0.3em 0px;
+                border: none;
+                font-size: 1.3em;
+                > a {
+                    display: block;
+//                  padding: 0.2em;
+                    padding-left: 0px;
+                    color: #767676;
+                    text-decoration: none;
+                    &:hover,
+                    &:hover * {
+                        color: black;
+                        text-decoration: none;
+                    }
+                    &.return {
+//                       font-size: 1.4em;
+                        margin-bottom: 0.5em;
+                        color: #767676;
+                        .chevron-left {
+                            width: 25px;
+                            height: 25px;
+                            background: url(../images/chevrons/left.png) 50% 50% no-repeat;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 0.3em;
+                        }
+                    }
+                    .chevron-right {
+                        width: 25px;
+                        height: 25px;
+                        background: url(../images/chevrons/right.png) 90% 50% no-repeat;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .search-filter-choice {
+           // margin-top: 0.2em;
+           padding: 0.1em 0px;
+           height: 2.2em;
+        }
+        .tags .search-filter-choice {
+           height: 1.8em;
+        }
+        .search-filter-items {
+            .list-group {
+                border-bottom: none;
+                .list-group-item {
+                    font-size: 1em;
+                    height: 2.2em;
+                }
+            }
+        }
+        .header {
+            .category {
+                font-size: 1.25em;
+                font-weight: 500;
+                margin-top: 0.5em;
+                margin-bottom: 0.3em;
+            }
+            .label {
+                margin-top: 1.2em;
+                // padding: 0.6em;
+            }
+        }
+    }
+    hr {
+        margin: 0;
+    }
+    .validate-msg {
+        text-align: center;
+        font-size: 1.2em;
+        color: @gray;
+        margin: 0.8em 0px;
+    }
+    button {
+        .icon {
+            margin-top: 0.1em;
+        }
+    }
+
+        .tags-delimiter {
+            display: block;
+            line-height: 1em;
+            text-align: center;
+            margin: 0.5em 0 0.8em 0;
+            .icon {
+                height: 1em;
+            }
+        }
+
+
+        .chevron-down {
+            width: 40px;
+            height: 40px;
+            background: url(../images/chevrons/down.png) 50% 50% no-repeat;
+            display: inline-block;
+
+        }
+
+        .chevron-up {
+            width: 40px;
+            height: 40px;
+            background: url(../images/chevrons/up.png) 50% 50% no-repeat;
+            display: inline-block;
+
+        }
+
+
+
+
+}
+
+
+.search-result-stats {
+    padding: 0.5em 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    
+    .label {
+        font-size: 1em;
+        color: gray;
+        font-weight: normal;
+    }
+    @chevron-h : 40px;
+    .switcher {
+        .fit(0, 0, auto, auto);
+        border-left: 1px solid #eee;
+        width: @chevron-h;
+        height: @chevron-h;
+        .chevron {
+            width: @chevron-h;
+            height: @chevron-h;
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            background-position: 43% 56%;
+            background-repeat: no-repeat;
+            background-size: 60% auto;
+            &.chevron-down {
+                background-image: url(../images/chevrons/down.png);
+            }
+            &.chevron-up {
+                background-image: url(../images/chevrons/up.png);
+            }
+        }
+    }
+    .count {
+        font-size: 1.2em;
+        .current { color: @dark-gray; padding: 0em 0.1em; font-weight: 300; font-size: 1.1em;}
+        .separator { color: @red-main; padding: 0em;  font-weight: 100;}
+        .total { color: @red-main; padding: 0em 0.1em; font-weight: 800; font-size: 1.2em; }
+    }
+    
+	.tags-delimiter {
+	    display: block;
+	    line-height: 1em;
+	    text-align: center;
+	    margin: 0.5em 0 0.8em 0;
+	    .icon {
+	        height: 1em;
+	    }
+	}    
+    
+
+	.chevron-down {
+	    width: 40px;
+	    height: 40px;
+	    background: url(../images/chevrons/down.png) 50% 50% no-repeat;
+	    display: inline-block;
+	
+	}
+	
+	.chevron-up {
+	    width: 40px;
+	    height: 40px;
+	    background: url(../images/chevrons/up.png) 50% 50% no-repeat;
+	    display: inline-block;
+	
+	}
+    
+}
+
+.searchpanel {
+    .search-result-stats {
+        border: none;
+        .label {
+            padding: 0;
+        }
+    }
+}

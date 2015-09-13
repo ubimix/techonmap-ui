@@ -1,0 +1,144 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "id": "42",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3186,
+        48.896229
+      ]
+    },
+    "properties": {
+      "id": "42",
+      "category": "École",
+      "name": "42",
+      "tags": [
+        "développeur",
+        "heartofcode"
+      ],
+      "address": "96 boulevard Bessières",
+      "postcode": "75017",
+      "city": "Paris",
+      "creationyear": "2013",
+      "url": "http://www.42.fr",
+      "twitter": "42born2code",
+      "facebook": "https://www.facebook.com/ecole42",
+      "googleplus": "https://plus.google.com/114371889748884562535",
+      "description": "42 est une école gratuite, financée par la fondation Free, qui développe une méthodologie d'apprentissage par projet pour former de jeunes talents aux métiers informatiques et à la programmation.",
+      "updated": 1429801727000
+    }
+  }, {
+    "id": "1913",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.31361,
+        48.831558
+      ]
+    },
+    "properties": {
+      "id": "1913",
+      "category": "Entreprise",
+      "name": "1913",
+      "tags": [
+        "télécoms"
+      ],
+      "address": "141 rue Raymond Losserand",
+      "postcode": "75014",
+      "city": "Paris",
+      "creationyear": "2005",
+      "url": "http://www.1913.fr",
+      "linkedin": "http://www.linkedin.com/company/530807",
+      "description": "La société 1913 est spécialisée dans les besoins télécom et communications d'entreprise.",
+      "updated": 1429721008000
+    }
+  }, {
+    "id": "1001-menus",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.34663,
+        48.86813
+      ]
+    },
+    "properties": {
+      "id": "1001-menus",
+      "category": "Entreprise",
+      "name": "1001 Menus",
+      "tags": [
+        "B2B",
+        "restauration"
+      ],
+      "address": "23 rue de Clery",
+      "postcode": "75002",
+      "city": "Paris",
+      "creationyear": "2010",
+      "url": "http://www.1001menus.com",
+      "twitter": "1001menus",
+      "linkedin": "http://www.linkedin.com/company/1161449",
+      "description": "1001 Menus propose une plate-forme web et mobile pour centraliser la communication digitale des restaurants.",
+      "updated": 1410968664000
+    }
+  }, {
+    "id": "123-venture",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3307433640004547,
+        48.874847057000466
+      ]
+    },
+    "properties": {
+      "id": "123-venture",
+      "category": "Investisseur",
+      "name": "123 Venture",
+      "tags": [
+        "capital risque",
+        "mezzanine"
+      ],
+      "address": "94 rue de la Victoire",
+      "postcode": "75009",
+      "city": "Paris",
+      "creationyear": "2000",
+      "url": "http://www.123venture.com",
+      "twitter": "123Venture",
+      "linkedin": "http://www.linkedin.com/company/79342",
+      "viadeo": "http://fr.viadeo.com/fr/company/123venture",
+      "description": "123Venture est une société de gestion indépendante avec plus de 1.000M€ investis dans le capital-investissement et l'immobilier.",
+      "updated": 1418739904000
+    }
+  }, {
+    "id": "1x1connect",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.35272,
+        48.850102
+      ]
+    },
+    "properties": {
+      "id": "1x1connect",
+      "category": "Entreprise",
+      "name": "1X1connect",
+      "tags": [
+        "interactif",
+        "marketing"
+      ],
+      "address": "5 rue Cochin",
+      "postcode": "75005",
+      "city": "Paris",
+      "creationyear": "2010",
+      "url": "http://www.1x1connect.com",
+      "twitter": "1x1connect",
+      "facebook": "https://www.facebook.com/1x1connect",
+      "linkedin": "http://www.linkedin.com/company/2909903",
+      "description": "1x1 connect développe différents outils de marketing d’interaction web pour des sites média, e-commerce ou des marques.",
+      "updated": 1429801727000
+    }
+  }]

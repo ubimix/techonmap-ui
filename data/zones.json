@@ -1,0 +1,42 @@
+[
+    {
+        "key" : "75",
+        "icon" : "icon-dept-75",
+        "label" : "Paris"
+    },
+    {
+        "key" : "91",
+        "icon" : "icon-dept-91",
+        "label" : "Essonne"
+    },
+    {
+        "key" : "92",
+        "icon" : "icon-dept-92",
+        "label" : "Hauts-de-Seine"
+    },
+    {
+        "key" : "93",
+        "icon" : "icon-dept-93",
+        "label" : "Seine-Saint-Denis"
+    },
+    {
+        "key" : "77",
+        "icon" : "icon-dept-77",
+        "label" : "Seine-et-Marne"
+    },
+    {
+        "key" : "94",
+        "icon" : "icon-dept-94",
+        "label" : "Val-de-Marne"
+    },
+    {
+        "key" : "95",
+        "icon" : "icon-dept-95",
+        "label" : "Val-d'Oise"
+    },
+    {
+        "key" : "78",
+        "icon" : "icon-dept-78",
+        "label" : "Yvelines"
+    }
+]

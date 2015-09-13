@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechOnMap - Identification</title>
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/icons.css" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+<style>
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pagetitle {
+	font-weight: 300;
+	color: #666;
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+p>a {
+	text-decoration: none;
+}
+
+.btn-gray {
+	font-size: 16px;
+	color: #fff;
+	background: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	display: inline-block;
+	zoom: 1;
+	padding-left: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 45px;
+}
+
+.social-auth {
+	background: url(../images/btn-green-tick.png) 100% 50% no-repeat #53c591;
+	margin-right: 0.5em;
+	width: 40%;
+}
+
+p.help {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.help {
+	color: #AAAAAA;
+	vertical-align: baseline;
+}
+
+.btn {
+    border-radius: 0px
+}
+.icon {
+    margin-right: 0.3em;
+}
+.label {
+    display: block;
+    padding: 0em;
+    padding-top: 0.5em;
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+	<div id="content" class="container">
+		<h3 class="pagetitle">Ajoutez ou modifiez la description de votre organisation.</h3>
+		<div id="auth-panel">
+			<p class="help">La publication de données sur
+				TechOnMap nécessite une authentification via l'un des réseaux sociaux ci-dessous.</p>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="/api/auth/twitter"
+						class="btn btn-primary btn-lg btn-block" data-network="twitter">
+						<i class="icon icon-twitter"></i>
+	                    <span class="label">Twitter</span>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="/api/auth/linkedin"
+						class="btn btn-primary btn-lg btn-block" data-network="linkedin">
+						<i class="icon icon-linkedin glyphicon glyphicon-asterisk"></i>
+	                    <span class="label">LinkedIn</span>
+					</a>
+				</div>
+                <div class="col-xs-3">
+                    <a href="/api/auth/google" class="btn btn-primary btn-lg btn-block"
+                        data-network="google"> <i
+                        class="icon icon-google-plus"></i>
+	                    <span class="label">Google+</span>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/api/auth/facebook" class="btn btn-primary btn-lg btn-block"
+                        data-network="facebook"> <i
+                        class="icon icon-facebook"></i>
+	                    <span class="label">Facebook</span>
+                    </a>
+                </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+

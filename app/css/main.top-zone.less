@@ -1,0 +1,273 @@
+.top-zone {
+    .fit(@social-height, 0px, auto, 0px);
+    z-index: 1001; // To be just before floating bootstrap elements
+    height: @top-height;
+    min-height : inherit;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 0;
+    
+    .navbar-header {
+        min-width: 100px; 
+        .navbar-brand {
+            float: left;
+            height: auto;
+            font-size: 1em;
+            padding: 10px 15px 5px 10px;
+            line-height: 1.42857143;
+            img { max-width: 100% }
+        }
+        
+        .baseline {
+            font-size: 13px;
+            color: #666;
+            clear: both;
+        }
+    }
+
+    .navbar-form {
+        padding-left: 0px;
+    }
+    
+    ul.top-navigation {
+        z-index: 1002;
+        border-bottom: none;
+        padding-top: 5px;
+
+        > li {
+            > a {
+                border: 1px solid transparent;
+                text-align: center;
+                margin: 0px;
+                margin-top: 0.3em;
+                padding: 0px;
+                padding-top: 0.3em;
+                > i.icon {
+                    .icon(24px);
+                }
+                > span.label {
+                    display: block;
+                    font-size: smaller;
+                    font-weight: normal;
+                    line-height: 1;
+                    text-align: center;
+                    white-space: nowrap;
+                    margin: 0em;
+                    color: gray;
+                }
+                &:hover, &.open {
+                    > span.label {
+                        color: black;
+                    }
+                    &.menu-info {
+                        color: @blue;
+                    }
+                    &.menu-faq {
+                        color: #a880c2;
+                    }
+                    &.menu-share {
+                        color: #69a387;
+                    }
+                    
+                    &.menu-export {
+                        color: @beige;
+                    }
+                    &.menu-heatmap {
+                        color: #b76555;
+                    }
+                    
+                    &.menu-search {
+                        color: @red-main;
+                    }
+                    
+                }
+            }
+            /* Drop-down search panel  */
+            &.dropdown {
+                // Search panel: default (closed) style
+                > .dropdown-menu {
+                    .box-shadow();
+                    display: none;
+                    //margin-top: -2px;
+                    z-index: -1;
+                    border: none;
+                    border-radius: 0px;
+                    border-bottom: 2px solid @red-main;
+                }
+                // Open search panel
+                &.open {
+                    > a {
+                        background-color: white;
+                        border-color: #eee;
+                        border-bottom-color: white;
+                        &.menu-search {
+                            color: @red-main;
+                        }
+                        > span.label {
+                            color: black;
+                        }
+                    }
+                    > .dropdown-menu {
+                        display: block;
+                    }
+                    .searchpanel {
+                        max-width: 450px;
+                        max-height: 450px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .btn-group {
+        white-space: nowrap;
+        height: 34px;
+        
+        .btn {
+            outline: none;
+            background: url(../images/plus.png) 100% 50% no-repeat @blue;
+            display: inline-block;
+            padding-right: 45px;
+        }
+        
+        &:hover {
+            .btn, .btn-add {
+                background-color: darken(@blue, 10%);
+                border-color: darken(@blue, 10%);
+            }
+        }
+            
+    }
+}
+
+form[role="search"] {
+    > .input-group {
+        background-color: white;
+        .input-group-addon {
+            border-radius: 0;
+            color: silver;
+            background-color: transparent;
+        }
+        input {
+            .box-shadow(none);
+            border-left: none;
+            border-right: none;
+            &:first-child { border-left: 1px solid #ccc; }
+            &:last-child { border-right: 1px solid #ccc; }
+            &:focus { border-color: #ccc; }
+            padding-left: 0;
+            border-radius: 0;
+        }
+        
+    }
+}
+
+@media(max-width: 1064px) {
+    ul.top-navigation {
+        > li {
+            width: 64px;
+        }
+   }
+}
+
+@media(min-width: 1064px) {
+    ul.top-navigation {
+        > li {
+            width: 72px;
+        }
+   }
+}
+
+/*
+@media(max-width: 768px) {
+    .top-zone {
+        ul.top-navigation {
+            > li {
+                width: inherit;
+                > a {
+                    text-align: left;
+                    margin: 0px;
+                    padding: 0.3em;
+                    > i.icon {
+                        .icon(1em);
+                    }
+                    > span.label {
+                        display: inline-block;
+                        font-size: 1em;
+                        font-weight: normal;
+                        line-height: 1;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+
+&.mobile-mode {
+  .top-zone {
+    top: @social-height-mobile;
+    height: @top-height-mobile;
+    .navbar-header {
+        max-width: 100%; 
+        min-width: 100px; 
+        .navbar-brand {
+            padding: 8px 0px;
+        }
+    }    
+    
+    ul.top-navigation {
+        padding-top: 0px;
+        > li {
+            width: inherit !important;
+//            text-align: center;
+//            padding: 0.5em 0px;
+            margin: 0 0.5em;
+            > a {
+                color: gray;
+            }
+            &:hover, &.active {
+            
+                &.li-info {
+                    border-bottom: 4px solid @blue;
+                    a {
+                        color: @blue;
+                    }
+                }
+                            
+                &.li-search {
+                    border-bottom: 4px solid @red-main;
+                    a {
+                        color: @red-main;
+                    }
+                }                            
+            
+                &.li-map {
+                    border-bottom: 4px solid @purple;
+                    a {
+                        color: @purple;
+                    }
+                }
+                
+                &.li-list {
+                    border-bottom: 4px solid @beige;
+                    a {
+                        color: @beige;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background: none;
+    }
+  }
+  &.no-headers {
+     .middle-zone { top : 0px; }
+     .top-zone { top: 0px; }
+  }
+} 

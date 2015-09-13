@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechOnMap - Identification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+</head>
+<body>
+    <script type="text/javascript">
+	    var opener = window.opener;
+        if (opener && opener.onLoginFinished) {
+		    var info = { cancel: false, user : { name : 'John Doe'}};
+		    opener.onLoginFinished.call(opener, info);
+		}
+	    window.close();
+    </script>
+
+</body>
+</html>
+
+

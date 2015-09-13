@@ -1,0 +1,21 @@
+{
+    "properties.id": "Identifiant",
+    "properties.category": "Catégorie",
+    "properties.name": "Nom",
+    "properties.description": "Description"
+    "properties.tags": "Tags",
+    "properties.address": "Adresse",
+    "properties.postcode": "Code postal",
+    "properties.city": "Ville",
+    "properties.creationyear": "Année de création",
+    "properties.url": "Site web",
+    "properties.twitter": "Compte Twitter",
+    "properties.facebook": "Compte Facebook",
+    "properties.linkedin": "Compte LinkedIn",
+    "properties.viadeo": "Compte Viadeo",
+    "properties.googleplus": "Compte Google+",
+    "geometry.coordinates[0]": "Longitude",
+    "geometry.coordinates[1]": "Latitude"
+}
+
+

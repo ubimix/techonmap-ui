@@ -1,0 +1,28 @@
+.fit(@top:0px, @right:0px, @bottom:0px, @left:0px) {
+    position: absolute;
+    top : @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.box-shadow(@arguments:0px 0px 2px rgba(0, 0, 0, 0.2)) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+
+.icon(@size:32px) {
+    font-size: @size;
+    line-height: @size;
+    width: @size;
+    height: @size;
+    display: inline-block;
+    background-size: @size @size;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
+.icon-image(@url){
+    background-image: url( @url );
+}

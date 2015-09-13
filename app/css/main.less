@@ -1,0 +1,198 @@
+&.container-fluid {
+    width: 100%;
+    padding: 0;
+}
+
+@social-height: 25px;
+@social-height-mobile: 25px;
+
+@top-height: 70px;
+@top-height-mobile: 43px;
+
+@panel-margin: 10px;
+@bar-size : 40px;
+@nav-size : 30px;
+
+@red-main: #eb6564;
+@red-dark: #d40308;
+@gray: #7d7d7d;
+@light-gray: #999;
+
+@menu-item-size: 1.2em;
+@menu-icon-size: 1.2em;
+@menu-item-size-inline: 0.8em;
+
+@closable-tag-size: 1.1em;
+.text-size(@font-size:1em){
+    font-size: @font-size;
+    vertical-align: middle;
+}
+.closable-tag(){
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    color: @gray;
+    .text-size(@closable-tag-size);
+    &.selected,
+    &.none {
+        font-weight: bold;
+    }
+}
+.closable-tag-container(){
+}
+
+.closable-tag-icon(){
+//    margin: 0px;
+//    padding: 0px;
+//    color: @gray;
+    vertical-align: middle;
+    margin-right: 0.4em;
+    .text-size(@menu-icon-size);
+}
+
+// Common styles reusable in different contexts
+.tag {
+    .closable-tag;
+    .text-size(0.9em);
+    color : @red-main;
+    margin-right: 0.5em; 
+    &::before {
+        content: " #";
+    }
+    &.none {
+        color: @gray;
+        .text-size(@closable-tag-size);
+    }
+    &.none::before {
+        content : '';
+    }
+}
+a:hover .tag, a:hover .tag * {color:black;}
+.tags {
+    .closable-tag-container;
+	.tag {}
+    .label { font-weight: normal; }
+}
+.tags-inline {
+    .tag {}
+}
+
+.category {
+    .closable-tag;
+    > .icon {
+        .closable-tag-icon;
+    }
+    .category-label {}
+    &.selected {}
+}
+a:hover .category, a:hover .category * { color:black; }
+.categories {
+    .closable-tag-container;
+    .category {}
+    .label { font-weight: normal; }
+    
+}
+.categories-inline {
+    .category {
+        vertical-align: inherit;
+        .category-label {
+//            font-weight: bold;
+//            font-size: 0.9em;
+        }
+        
+        > .icon {
+            margin-right: 0.3em;
+        }
+    }
+}
+
+.zone {
+    .closable-tag;
+    > .icon {
+        .closable-tag-icon;
+        .icon(24px);
+        &.icon-dept-75 {
+            background-image: url(../images/departments/dept-75.png);
+        }
+        &.icon-dept-77 {
+            background-image: url(../images/departments/dept-77.png);
+        }
+        &.icon-dept-78 {
+            background-image: url(../images/departments/dept-78.png);
+        }
+        &.icon-dept-91 {
+            background-image: url(../images/departments/dept-91.png);
+        }                                    
+        &.icon-dept-92 {
+            background-image: url(../images/departments/dept-92.png);
+        }                                    
+        &.icon-dept-93 {
+            background-image: url(../images/departments/dept-93.png);
+        }                                    
+        &.icon-dept-94 {
+            background-image: url(../images/departments/dept-94.png);
+        }                                    
+        &.icon-dept-95 {
+            background-image: url(../images/departments/dept-95.png);
+        }                                    
+    }
+    .zone-label {}
+}
+.zones {
+    .closable-tag-container;
+    .zone {}
+    .label { font-weight: normal; }
+}
+.zones-inline { 
+    .zone { 
+        vertical-align: inherit;
+        .zone-label {}
+        > .icon { margin-right: 0.3em; }
+    }
+}
+
+a:hover .zone, a:hover .zone * { color:black; }
+
+.query {
+    .closable-tag;
+}
+
+.social-networks {
+    font-size: 1em;
+    
+    color: #3f3f3f;
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        li {
+            span {
+                color: @red-main;
+                font-size: small;
+                white-space: nowrap;
+            }
+        }
+    }
+    
+    a {
+        color: #3f3f3f;
+        padding-right: 0.5em;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    .icon-off {
+        color: #ccc;
+        padding-right: 0.5em;
+    }  
+}
+
+@import url('./main.twitter.less');
+@import url('./main.searchpanel.less');
+@import url('./main.top-zone.less');
+@import url('./main.bottom-zone.less');
+@import url('./main.middle-zone.less');
+@import url('./main.leaflet.less');
+    
+

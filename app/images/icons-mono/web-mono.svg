@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   id="Calque_1"
+   xml:space="preserve"><metadata
+     id="metadata5009"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs5007" /><g
+     transform="matrix(1.7142859,0,0,1.7142855,-4.4291451,-2.4285677)"
+     id="g4991"><circle
+       cx="11.917"
+       cy="10.75"
+       r="6.5"
+       id="circle4993"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><path
+       d="M 17.315,7.126 C 16.147,7.62 14.165,7.945 11.917,7.945 9.675,7.945 7.694,7.62 6.528,7.129"
+       id="path4995"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><path
+       d="m 17.312,14.373 c -1.166,-0.493 -3.148,-0.816 -5.395,-0.816 -2.242,0 -4.223,0.323 -5.389,0.814"
+       id="path4997"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><path
+       d="m 11.909,17.25 c 1.877,0 3.391,-2.91 3.391,-6.5 0,-3.588 -1.514,-6.5 -3.391,-6.5 -1.871,0 -3.389,2.912 -3.389,6.5 0.001,3.59 1.518,6.5 3.389,6.5 z"
+       id="path4999"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><line
+       stroke-miterlimit="10"
+       x1="5.4169998"
+       y1="10.75"
+       x2="18.405001"
+       y2="10.75"
+       id="line5001"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><line
+       stroke-miterlimit="10"
+       x1="11.909"
+       y1="4.257"
+       x2="11.909"
+       y2="17.243"
+       id="line5003"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></g></svg>

@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+	<form action="./send" enctype="application/x-www-form-urlencoded"
+		method="POST">
+		<div>
+			<div>
+				<input name="name" placeholder="Votre nom" />
+			</div>
+			<div>
+				<input name="email" placeholder="Votre e-mail" />
+			</div>
+			<div>
+				<select name="reason">
+					<option>Choisissez une raison</option>
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="opel">Opel</option>
+					<option value="audi">Audi</option>
+				</select>
+			</div>
+			<div>
+				<textarea name="content" placeholder="Votre message" rows="10"
+					cols="80"></textarea>
+			</div>
+		</div>
+		<input type="submit" value="OK" />
+	</form>
+</body>
+</html>

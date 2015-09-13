@@ -1,0 +1,111 @@
+@import (css) url('../../node_modules/bootstrap/dist/css/bootstrap.css');
+
+@input-border-focus:red;
+
+.icon(@size:32px) {
+    font-size: @size;
+    line-height: @size;
+    width: @size;
+    height: @size;
+    display: inline-block;
+    background-size: @size @size;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
+.icon-image(@url){
+    background-image: url( @url );
+}
+.default-fonts(){
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import (less) url('./icons.css');
+
+@red-main: #eb6565;
+@red-dark: #d40308;
+@gray: #7d7d7d;
+@dark-gray: #666666;
+// @blue: #385f98;
+@blue: #374F98;
+@purple: #a880c2;
+@beige: #d1c37e;
+
+.btn {
+    border-radius: 0px;
+    outline: none;
+    &.btn-primary {
+        background-color: @blue;
+        border-color: @blue;
+    }
+}
+
+.input-group-addon {
+    border-radius: 0px;
+}
+
+.nav-tabs > li > a {
+    border: 1px solid #ddd;
+    margin-right: -1px;
+    &:hover, &:focus {
+        border: 1px solid #ddd;
+    }
+}
+
+.pagination   {
+    > li {
+        &:first-child {
+            > a, > span {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+        &::last-child {
+            > a, > span {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;    
+            }
+        }
+    
+        > a, > span {
+            color: #666;
+            border-color: #eee;
+            
+            &:hover, &:focus {
+                color: #666;
+                background-color: #eee;
+                border-color: #eee;
+            }
+        }     
+    }
+    
+    > .disabled {
+         > span,  > span:hover, > span:focus, > a, > a:hover, a:focus {
+            border-color: #eee;       
+         }
+    }
+    
+    > .active {
+        > a, > span, > a:hover, > span:hover, > a:focus,  > span:focus {
+            color: #666;
+            background-color: #eee;
+            border-color: #eee;
+        } 
+    }
+}
+
+@import url('./index.macros.less');
+
+.main-zone {
+    
+    @import (less) url('../../node_modules/leaflet/dist/leaflet.css');
+    
+    @import (less) url('../../node_modules/leaflet.markercluster/dist/MarkerCluster.css');
+    
+    @import (less) url('../../node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css');
+
+    @import url('./main.less');
+
+    .default-fonts();
+}
+@import url('./main.modals.less');

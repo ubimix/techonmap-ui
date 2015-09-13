@@ -1,0 +1,9 @@
+{
+  "name": "mapapp",
+  "version": "0.0.5",
+  "main": "src",
+  "dependencies": {
+    "font-awesome": "~4.2.0",
+    "bootstrap": "~3.3.0"
+  }
+}

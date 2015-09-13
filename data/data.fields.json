@@ -1,0 +1,43 @@
+{
+  "fields" : {
+      "properties.id" : {
+        "type" : "ref",
+        "boost": 1
+      },
+      "properties.name": { 
+        "type" : "field",
+        "boost": 10
+      },
+      "properties.description" : {
+        "type" : "field",
+        "boost": 5
+      },
+      "properties.category": {
+        "type" : "field",
+        "boost" : 3,
+        "filter" : true
+      },
+      "properties.tags": {
+        "type" : "field",
+        "boost" : 15,
+        "filter" : true
+      },
+      "properties.address" : {
+        "type" : "field",
+        "boost": 1
+      },
+      "properties.postcode" : {
+        "type" : "field",
+        "boost": 1,
+        "filter" : "prefix"
+      },
+      "properties.city" : {
+        "type" : "field",
+        "boost": 2
+      },
+      "properties.url" : {
+        "type" : "field",
+        "boost": 1
+      }
+   }
+}
